@@ -1,2 +1,32 @@
+# Thanks to https://github.com/alexkaratarakis for these github attribute templates.
 # Auto detect text files and perform LF normalization
+
+# Basic .gitattributes for a python repo.
+
+# Source files
+# ============
+*.pxd		text
+*.py 		text
+*.py3 		text
+*.pyw 		text
+*.pyx  		text
+
+# Binary files
+# ============
+*.db		binary
+*.p 		binary
+*.pkl 		binary
+*.pyc 		binary
+*.pyd		binary
+*.pyo 		binary
+
+# Note: .db, .p, and .pkl files are associated
+# with the python modules ``pickle``, ``dbm.*``,
+# ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
+# (among others).
+
+# Auto detect text files and perform LF normalization
+# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
 * text=auto
+
+*.cs     diff=csharp
